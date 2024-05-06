@@ -1,3 +1,4 @@
+// modified dom to image library to bypass Glyphicons Halflings Font Jevelin theme error
 (function (global) {
     'use strict';
 
@@ -1102,7 +1103,6 @@
                 .then(selectWebFontRules)
                 .then(function (rules) {
                     rules = filterWebFontRules(rules)
-                    console.log(rules)
                     return rules.map(newWebFont);
                 });
         function filterWebFontRules(rules){
